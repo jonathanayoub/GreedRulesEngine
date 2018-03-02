@@ -1,4 +1,6 @@
-﻿namespace GreedRulesEngine.Rules
+﻿using System.Linq;
+
+namespace GreedRulesEngine.Rules
 {
     public class SingleOneRule : IScoreRule
     {
@@ -8,9 +10,23 @@
         {
             var result = roll.Result;
 
-            return result.Contains(1)
-                ? SingleOneScore
+            var groupedRolls = result.GroupBy(r => r);
+            var oneGroups = groupedRolls.SingleOrDefault(g => g.Key == 1);
+            if (oneGroups == null)
+                return 0;
+
+            var numberOfOnes = oneGroups.Count();
+
+            return numberOfOnes > 0
+                ? SingleOneScore * GetNumberOfOnesToScore(numberOfOnes)
                 : 0;
+        }
+
+        private int GetNumberOfOnesToScore(int numberOfOnes)
+        {
+            return numberOfOnes >= 3
+                ? numberOfOnes - 3
+                : numberOfOnes;
         }
     }
 }
