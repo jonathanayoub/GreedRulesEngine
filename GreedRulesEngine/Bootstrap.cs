@@ -17,8 +17,8 @@ namespace GreedRulesEngine
         {
             return new List<IScoreRule>
             {
-                new SingleOneRule(),
-                new SingleFiveRule(),
+                new SingleRule(DieFace.One),
+                new SingleRule(DieFace.Five),
                 new TripleRule(DieFace.One),
                 new TripleRule(DieFace.Two),
                 new TripleRule(DieFace.Three),

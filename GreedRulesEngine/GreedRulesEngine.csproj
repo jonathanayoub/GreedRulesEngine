@@ -52,7 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomDiceRoll.cs" />
     <Compile Include="Rules\SingleFiveRule.cs" />
-    <Compile Include="Rules\SingleOneRule.cs" />
+    <Compile Include="Rules\SingleRule.cs" />
     <Compile Include="Rules\TripleRule.cs" />
   </ItemGroup>
   <ItemGroup>

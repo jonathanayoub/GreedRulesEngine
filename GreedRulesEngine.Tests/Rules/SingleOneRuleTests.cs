@@ -7,12 +7,12 @@ namespace GreedRulesEngine.Tests.Rules
     [TestFixture]
     public class Given_a_roll_with_a_number_of_1s
     {
-        private SingleOneRule _sut;
+        private SingleRule _sut;
 
         [SetUp]
         public void Setup()
         {
-            _sut = new SingleOneRule();
+            _sut = new SingleRule(DieFace.One);
         }
 
         [Test]
