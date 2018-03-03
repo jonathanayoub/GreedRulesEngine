@@ -1,6 +1,7 @@
 ﻿using GreedRulesEngine.Tests.Rules;
 using NUnit.Framework;
 using System.Collections.Generic;
+using GreedRulesEngine.Core;
 
 namespace GreedRulesEngine.Tests
 {
@@ -10,7 +11,7 @@ namespace GreedRulesEngine.Tests
 
         public GreedGame CreateGame(IDiceRoll stubRoll)
         {
-            return new GreedGame(stubRoll, Bootstrap.GetBasicRules());
+            return new GreedGame(Bootstrap.GetRulesEngine(), stubRoll);
         }
 
         [Test]

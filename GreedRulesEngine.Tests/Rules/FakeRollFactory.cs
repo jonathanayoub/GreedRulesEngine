@@ -1,5 +1,6 @@
 ﻿using Moq;
 using System.Collections.Generic;
+using GreedRulesEngine.Core;
 
 namespace GreedRulesEngine.Tests.Rules
 {

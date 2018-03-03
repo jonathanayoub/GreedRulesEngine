@@ -1,4 +1,4 @@
-﻿namespace GreedRulesEngine
+﻿namespace GreedRulesEngine.Core
 {
     public enum DieFace
     {

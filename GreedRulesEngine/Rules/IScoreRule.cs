@@ -1,4 +1,6 @@
-﻿namespace GreedRulesEngine.Rules
+﻿using GreedRulesEngine.Core;
+
+namespace GreedRulesEngine.Rules
 {
     public interface IScoreRule
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GreedRulesEngine
+namespace GreedRulesEngine.Core
 {
     public class RandomDiceRoll : IDiceRoll
     {

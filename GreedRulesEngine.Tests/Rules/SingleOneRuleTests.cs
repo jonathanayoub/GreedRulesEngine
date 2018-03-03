@@ -1,6 +1,7 @@
 ﻿using GreedRulesEngine.Rules;
 using NUnit.Framework;
 using System.Collections.Generic;
+using GreedRulesEngine.Core;
 
 namespace GreedRulesEngine.Tests.Rules
 {

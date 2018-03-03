@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GreedRulesEngine
+namespace GreedRulesEngine.Core
 {
     public interface IDiceRoll
     {

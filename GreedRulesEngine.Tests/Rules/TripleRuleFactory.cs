@@ -1,4 +1,5 @@
-﻿using GreedRulesEngine.Rules;
+﻿using GreedRulesEngine.Core;
+using GreedRulesEngine.Rules;
 
 namespace GreedRulesEngine.Tests.Rules
 {
