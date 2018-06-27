@@ -46,7 +46,7 @@
     <Compile Include="Core\DieFace.cs" />
     <Compile Include="Core\GreedGame.cs" />
     <Compile Include="Core\GreedGameResult.cs" />
-    <Compile Include="Core\GreedRuleEngine.cs" />
+    <Compile Include="Core\GreedRulesEngine.cs" />
     <Compile Include="Core\IDiceRoll.cs" />
     <Compile Include="Rules\IScoreRule.cs" />
     <Compile Include="Program.cs" />
